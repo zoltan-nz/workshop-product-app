@@ -1,0 +1,15 @@
+<h2>Categories</h2>
+
+<div class="row">
+  <div class="col-sm">
+    <p>{{link-to 'Add new' 'admin.categories.new'}}</p>
+    <ul>
+      {{#each model as |category|}}
+        <li>{{link-to category.name 'admin.categories.show' category}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-sm">
+    {{outlet}}
+  </div>
+</div>
