@@ -1,0 +1,6 @@
+<tr>
+  <td>{{message.id}}</td>
+  <td>{{#link-to 'messages.show' message.label message.id}}{{message.subject}}{{/link-to}}</td>
+  <td>{{message.date}}</td>
+  {{#if message.showStatus}}<td>{{message.status}}</td>{{/if}}
+</tr>

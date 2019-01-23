@@ -26,4 +26,5 @@ export default function() {
 
   this.resource('categories');
   this.resource('products');
+  this.resource('messages');
 }

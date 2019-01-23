@@ -1,0 +1,11 @@
+<table class="table-bordered ">
+  <tr>
+    <th>ID</th>
+    <th>Subject</th>
+    <th>Date</th>
+    {{#if showStatus}}<th>Status</th>{{/if}}
+  </tr>
+  {{#each messages as |message|}}
+    {{message-item message=message}}
+  {{/each}}
+</table>

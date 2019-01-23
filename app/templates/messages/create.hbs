@@ -1,0 +1,7 @@
+<h2>Create</h2>
+
+<form>
+  Subject: {{input value=model.subject}}
+
+  <button {{action 'send' model}} disabled={{model.isInvalid}}>{{if showSpinner 'Sending...' 'Send'}}</button>
+</form>

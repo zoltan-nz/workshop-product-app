@@ -15,6 +15,12 @@ Router.map(function() {
     });
     this.route('products');
   });
+  this.route('messages', function() {
+    this.route('show', { path: ':label/:id' });
+    this.route('create');
+    this.route('inbox');
+    this.route('outbox');
+  });
 });
 
 export default Router;

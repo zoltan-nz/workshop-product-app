@@ -7,4 +7,5 @@ export default function(server) {
 
   server.createList('category', 10);
   server.createList('product', 10);
+  server.createList('message', 30);
 }
