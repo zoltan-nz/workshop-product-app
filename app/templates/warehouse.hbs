@@ -1,0 +1,30 @@
+<h1>Warehouse</h1>
+
+<ul>
+  <li>Download Depos</li>
+  <li>Transfer products from one depo to other depo</li>
+  <li>Depo has a name and how many items they have</li>
+</ul>
+
+<pre><code>
+  GET /api/depos
+
+  depo: {
+    id: 1
+    name: "Summer"
+    items: 5
+  }
+</code></pre>
+
+<ul>
+  <li>Transfer item from one depo to other depo</li>
+  <li>We can do it to POST a TransferRequest to our API</li>
+</ul>
+
+<h2>Depos</h2>
+
+<ul>
+  {{#each model as |depo|}}
+    <li>Name: {{depo.name}}, Items: {{depo.items}}</li>
+  {{/each}}
+</ul>

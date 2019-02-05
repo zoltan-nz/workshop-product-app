@@ -9,7 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('admin', function() {
     this.route('categories', function() {
-      this.route('show', { path: ':category_id'})
+      this.route('show', { path: ':category_id'});
       this.route('new');
       this.route('edit', { path: ':category_id/edit'});
     });
@@ -21,6 +21,7 @@ Router.map(function() {
     this.route('inbox');
     this.route('outbox');
   });
+  this.route('warehouse');
 });
 
 export default Router;
